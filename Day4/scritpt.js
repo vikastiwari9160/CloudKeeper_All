@@ -149,7 +149,22 @@ let mess2 =(data)=>{
 // "count": 120
 // }]
 
-let manipulateArrar = (objarr,arr) =>{
+var objarr = [{
+"id": 1,
+"title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+"price": 109.95,
+"description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+"category": "men's clothing",
+"image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+"rating": {
+"rate": 3.9,
+"count": 120
+}
+}]
+
+// Dynamic approch
+
+let manipulateArrar2 = (objarr,arr) =>{
     return objarr.map(obj=>{
         let newobj={};
         findInObj(obj,newobj,arr);
@@ -167,6 +182,21 @@ let findInObj = (obj,newobj,arr)=>{
         }
     }
 }
+
+// Concrete approch
+
+let manipulateArrar = (objarr,arr) =>{
+    return objarr.map(obj=>{
+        return {
+            id:obj.id,
+            title:obj.title,
+            rate:obj.rating.rate,
+            count:obj.rating.count
+        }
+    })
+}
+
+
 
 // 11. Default Parameter
 //  const fun = (name = "abc") => {
