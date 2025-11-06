@@ -1,0 +1,38 @@
+Find and terminate the top memory-consuming process on your system.
+kill $(ps aux | grep [c]ode | awk 'NR==1{print $2}')
+
+Create a user named devops and grant them sudo privileges.
+cut -d: -f1 /etc/passwd
+sudo adduser test1
+sudo usermod -aG sudo test1
+sudo deluser --remove-home test1
+
+Connect to a remote server, create a directory, and copy files into it using SCP.
+scp file_name user@ipaddress locations
+
+Connect to a remote server, create a directory, and copy files into it using SCP.
+scp test.txt vijay-singh-kanwal@10.1.210.4:/home/vijay-singh-kanwal/Desktop/SSH-test-vikas/
+
+List all active processes and save only those containing the word java into a file.
+ps aux | grep java > output.txt
+
+Generate an SSH key pair and configure it for two different remote servers.
+ssh-keygen -t rsa -b 4096 
+ssh-copy-id ~/.ssh/id_rsa user@ipaddress
+
+Find all lines containing “error” in /var/log/syslog and redirect them to errors_found.txt
+sudo grep error var/log/auth.log > /home/vikas-kumar-tiwari/Desktop/error_found.txt
+
+Find all .conf files in /etc, sort them alphabetically, and save to conf_list.txt.
+sudo find /etc -name "*.conf" | sort > /home/vikas-kumar-tiwari/Desktop/conf_list.tx
+
+Display the total number of unique shell types listed in /etc/passwd and save to shell_count.txt
+cut -d: -f7 /etc/passwd | sort | uniq | wc -l > /home/vikas-kumar-tiwari/Desktop/shell_count.txt
+
+Reset the current user password and reboot the system form shell. 
+passwd user
+sudo reboot
+
+Zip the content of your home directory via tar and send it via scp to other person laptop. Unzip the content on other person laptop via tar.
+tar -cvf /home/vikas-kumar-tiwari/Desktop/testing.tar /home/vikas-kumar-tiwari/Desktop/testing
+scp /home/vikas-kumar-tiwari/Desktop/testing.tar vijay-singh-kanwal@10.1.210.4:/home/vijay-singh-kanwal/Desktop/

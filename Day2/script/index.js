@@ -1,6 +1,7 @@
 var tabelDataBackUp;
 var table = document.getElementById('student-table');
 var Students = new Array();
+
 load();
 
 function newStu() {
@@ -58,9 +59,10 @@ function backup() {
 
 function load() {
     parseData= localStorage.getItem("data");
+    console.log(parseData);
     Students=JSON.parse(parseData)==null?new Array():JSON.parse(parseData);
     console.log(Students);
-    for (var student in Students) {
+    for (var student of Students) {
         var tableRow = document.createElement('tr');
         table.appendChild(tableRow);
 

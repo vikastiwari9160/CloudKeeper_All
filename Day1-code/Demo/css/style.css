@@ -241,6 +241,12 @@ body {
   text-align: center;
 }
 
+.demo-button {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
 .footer-section {
   background-color: #263238;
 }
