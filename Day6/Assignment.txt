@@ -1,0 +1,42 @@
+Configure SSH key in github account.
+ssh-keygen -t rsa -b 4096 
+
+Create a repository on github account.
+github web UI
+
+Clone the above repository on your local from github. 
+git clone git@github.com:vikastiwari9160/Day6_test_repository.git
+
+Create a new file, say test.txt, in main/master branch. Make some changes to this file and commit the changes.
+using touch or cat commands
+
+Create two branches from main/master branch, say f1 and f2.
+git branch f1
+git branch f2
+
+How can you resolve a merge conflict in Git, provide an example.
+while merging if there is a conflict then the termianl will show and accordingly we can solve the confilct.
+
+Show how divergence occurs in a branch.
+when a branch is created using the main and then some new commits are done in that branch as well the main branch then it could be clasified as divergence as the new branch is still on the previous commit of main.
+
+Difference between git init and git clone.
+Git init initializes a new Git repository in an empty or existing directory where as a git clone creates a copy of an existing remote repository, including its history and files.
+
+Difference between git branch and git checkout.
+git branch is used to list, create, or delete branches, while git checkout is used to switch between branches.
+
+Difference between git fetch and git pull.
+git fetch downloads updates from a remote repository but does not merge them into your local branch, while git pull fetches and automatically merges the changes into your current branch.
+
+How to squash commits?
+git log --oneline
+git rebase -i HEAD~3
+//edit the pick and change it with squash
+git push --force origin main
+
+Show the difference between git reset and git revert.
+git reset moves the branch pointer and potentially removes commits, altering history, while git revert creates a new commit that undoes changes without changing history.
+
+Delete branch from local and remote.
+for local "git branch -d f1" for remote "git push origin --delete f1" 
