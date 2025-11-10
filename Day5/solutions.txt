@@ -21,7 +21,7 @@ ssh-keygen -t rsa -b 4096
 ssh-copy-id ~/.ssh/id_rsa user@ipaddress
 
 Find all lines containing “error” in /var/log/syslog and redirect them to errors_found.txt
-sudo grep error var/log/auth.log > /home/vikas-kumar-tiwari/Desktop/error_found.txt
+sudo grep error var/log/syslog.log > /home/vikas-kumar-tiwari/Desktop/error_found.txt
 
 Find all .conf files in /etc, sort them alphabetically, and save to conf_list.txt.
 sudo find /etc -name "*.conf" | sort > /home/vikas-kumar-tiwari/Desktop/conf_list.tx

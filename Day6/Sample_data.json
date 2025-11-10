@@ -1,0 +1,104 @@
+{
+"sample": [
+	{
+		"name" : "Ramesh",
+		"address" : "123 Oak St, Anytown",
+		"phone" : 5551234567
+	},
+	{
+		"name" : "Priya",
+		"address" : "45 Banyan Ln, Metroville",
+		"phone" : 5552345678
+	},
+	{
+		"name" : "Amit",
+		"address" : "789 Pine Ave, Smallville",
+		"phone" : 5553456789
+	},
+	{
+		"name" : "Sita",
+		"address" : "101 Maple Rd, Cityland",
+		"phone" : 5554567890
+	},
+	{
+		"name" : "Rajesh",
+		"address" : "202 Cedar Ct, Techburg",
+		"phone" : 5555678901
+	},
+	{
+		"name" : "Neha",
+		"address" : "303 Birch Pl, Coastal City",
+		"phone" : 5556789012
+	},
+	{
+		"name" : "Deepak",
+		"address" : "404 Elm Blvd, Mountain View",
+		"phone" : 5557890123
+	},
+	{
+		"name" : "Kavita",
+		"address" : "505 Willow Way, Riverside",
+		"phone" : 5558901234
+	},
+	{
+		"name" : "Sanjay",
+		"address" : "606 Spruce Loop, Greenfield",
+		"phone" : 5559012345
+	},
+	{
+		"name" : "Asha",
+		"address" : "707 Poplar Dr, Sunnyside",
+		"phone" : 5550123456
+	},
+	{
+		"name" : "Mahesh",
+		"address" : "808 Aspen Tr, Northport",
+		"phone" : 5551122334
+	},
+	{
+		"name" : "Divya",
+		"address" : "909 Larch St, West End",
+		"phone" : 5552233445
+	},
+	{
+		"name" : "Alok",
+		"address" : "111 Hemlock Pk, East Side",
+		"phone" : 5553344556
+	},
+	{
+		"name" : "Meena",
+		"address" : "222 Juniper Rd, Central City",
+		"phone" : 5554455667
+	},
+	{
+		"name" : "Vimal",
+		"address" : "333 Redwood Ave, Port Town",
+		"phone" : 5555566778
+	},
+	{
+		"name" : "Jaya",
+		"address" : "444 Sycamore Bl, Hilltop",
+		"phone" : 5556677889
+	},
+	{
+		"name" : "Kiran",
+		"address" : "555 Cypress Ln, The Valley",
+		"phone" : 5557788990
+	},
+	{
+		"name" : "Sunita",
+		"address" : "666 Magnolia Dr, Lakeside",
+		"phone" : 5558899001
+	},
+	{
+		"name" : "Manoj",
+		"address" : "777 Palm Ave, Desert Springs",
+		"phone" : 5559900112
+	},
+	{
+		"name" : "Geeta",
+		"address" : "888 Fig St, Garden City",
+		"phone" : 5550011223
+	}
+]
+}
